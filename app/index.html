@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,249 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-
-
-
+  <div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="#">
+            <img class="header__img" src="images/logo/logo.png" alt="logo">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Про місто
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Про нас
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Центр продажу
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="page__box">
+      <div class="container">
+        <div class="page__inner">
+          <h1 class="page__title">
+            Ріелторська агенція
+          </h1>
+          <p class="page__descr">
+            Шукайте квартиру? Тоді вам точно до нас! Підберемо, допоможемо та поселимо.
+          </p>
+          <div class="page__btn-box">
+            <a class="page__btn button" href="#">
+              Вибрати квартиру
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="rooms">
+      <div class="rooms__container">
+        <ul class="rooms__inner">
+          <li class="rooms__list" style="background-image: url('images/rooms/1.png');">
+            <div class="rooms__list-box">
+              <div class="room__link-box">
+                <a class="rooms__link" href="#">
+                  Однокімнатна
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="rooms__list" style="background-image: url('images/rooms/2.png');">
+            <div class="rooms__list-box">
+              <div class="room__link-box">
+                <a class="rooms__link" href="#">
+                  Двокімнатна
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="rooms__list" style="background-image: url('images/rooms/3.png');">
+            <div class="rooms__list-box">
+              <div class="room__link-box">
+                <a class="rooms__link" href="#">
+                  Офісні приміщення
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="rooms__list" style="background-image: url('images/rooms/4.png');">
+            <div class="rooms__list-box">
+              <div class="room__link-box">
+                <a class="rooms__link" href="#">
+                  Студія
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="why">
+      <div class="container">
+        <h2 class="why__title">
+          Чому ми?
+        </h2>
+        <div class="why__inner">
+          <div class="why__item">
+            <div class="why__img-box">
+              <img class="why__img" src="images/why/1.svg" alt="#">
+            </div>
+            <div class="why__content">
+              <p class="why__num">
+                135
+              </p>
+              <p class="why__text">
+                Квартири
+              </p>
+            </div>
+          </div>
+          <div class="why__item">
+            <div class="why__img-box">
+              <img class="why__img" src="images/why/2.svg" alt="#">
+            </div>
+            <div class="why__content">
+              <p class="why__num">
+                0.3 га
+              </p>
+              <p class="why__text">
+                Площа забудови
+              </p>
+            </div>
+          </div>
+          <div class="why__item">
+            <div class="why__img-box">
+              <img class="why__img" src="images/why/2.svg" alt="#">
+            </div>
+            <div class="why__content">
+              <p class="why__num">
+                10
+              </p>
+              <p class="why__text">
+                Поверхів
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="why__description why__description-one">
+          При передачі квартири власнику в квартирі будуть вхідні двері, вікна, балконний блок, газовий котел, батареї,
+          чорнова
+          штукатурка стін, чорнова стяжка підлоги.
+        </p>
+        <h2 class="why__title">
+          Ми на карті
+        </h2>
+        <iframe class="why__cart"
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d27795264.93204858!2d72.87585311622598!3d53.03480001906328!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1654360277333!5m2!1sru!2sua"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="why__description">
+          20300, Умань, вул. Джерельна, 1 (біля Епіцентру)
+        </p>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__inner">
+          <div class="info__content">
+            <h2 class="info__title">
+              Отримайте детальну консультацію
+            </h2>
+            <p class="info__descr">
+              Заповніть анкету, щоб отримати детальну відповідь на ваші запитання та попередню вартість.
+            </p>
+          </div>
+          <form class="form">
+            <input class="form__input" type="text" placeholder="Ваше ім'я">
+            <input class="form__input" type="text" placeholder="Бажана площа Вашої квартири">
+            <input class="form__input" type="text" placeholder="Однокімнатна або двокімнатна квартира">
+            <input class="form__input" type="tel" placeholder="Номер телефону">
+          </form>
+        </div>
+        <div class="form__btn-box">
+          <button class="form__btn button" type="submit">
+            Відправити
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <a class="footer__logo-link" href="#">
+            <img class="footer__logo" src="images/logo/logo.png" alt="logo">
+          </a>
+          <p class="footer__text footer__agency">
+            Ріелторська агенція
+          </p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">
+                <img class="footer__item-img" src="images/soc/1.svg" alt="soc">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">
+                <img class="footer__item-img" src="images/soc/2.svg" alt="soc">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">
+                <img class="footer__item-img" src="images/soc/3.svg" alt="soc">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#">
+                <img class="footer__item-img" src="images/soc/4.svg" alt="soc">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__contact">
+          <h3 class="footer__title">
+            Контакти
+          </h3>
+          <a class="footer__number footer__text" href="#">
+            +380 73 102 01 20
+          </a>
+          <a class="footer__mail footer__text" href="mail:komfort.uman@gmail.com">
+            komfort.uman@gmail.com
+          </a>
+          <p class="footer__time footer__text">
+            Години роботи: <br>
+            Пн-пт: 9.00-18.00
+          </p>
+        </div>
+        <div class="footer__item footer__qr-box">
+          <img class="footer__qr" src="images/icons/qr.png" alt="qr">
+          <p class="footer__chat footer__text">
+            Чат підтримки WhatsApp
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

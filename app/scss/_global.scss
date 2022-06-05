@@ -1,0 +1,29 @@
+body{
+  color: #000;
+  @extend %monts-300;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.container{
+  max-width: 1160px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+
+.button{
+  padding: 20px 53px;
+  background: linear-gradient(90deg, #EB9562 0%, #E0CFA7 148.54%);
+  box-shadow: 3.98604px 3.98604px 3.98604px rgba(0, 0, 0, 0.25);
+  border-radius: 30.8918px;
+  font-size: 15px;
+  line-height: 20px;
+  transition: all .5s;
+  color: #fff;
+  &:hover{
+    background: linear-gradient(90deg, #EB9562 0%, #E0CFA7 148.54%);
+    box-shadow: 2.45745px 2.45745px 2.45745px rgba(0, 0, 0, 0.25);
+    border-radius: 19.0452px;
+    transform: scale(1.03);
+  }
+}
