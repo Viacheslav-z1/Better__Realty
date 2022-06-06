@@ -114,6 +114,21 @@
     }
 
   }
+  .contact{
+    &__inner{
+      background-size: 30%;
+      background-position: bottom right;
+    }
+    &__item{
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &__address{
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media(max-width: 968px) {
@@ -121,13 +136,18 @@
   .page__inner,
   .why,
   .info,
-  .about-city {
+  .about-city,
+  .about,
+  .contact__inner {
     padding: 30px 0;
   }
 
   .why__title,
   .info__title,
-  .about-city__title {
+  .about-city__title,
+  .about__title,
+  .group__title,
+  .contact__title {
     font-size: 51px;
     margin-bottom: 20px;
   }
@@ -190,9 +210,80 @@
     }
   }
 
+  .contact{
+    &__cart{
+      height: 400px;
+    }
+  }
+
   .about-city {
     &__item {
       height: 250px;
+    }
+  }
+
+  .about {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__title-2 {
+      display: block;
+      order: 1;
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    &__content {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__descr {
+      margin-bottom: 30px;
+    }
+
+    &__btn-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__btn {
+      order: 1;
+      max-width: 190px;
+    }
+  }
+  .group{
+    &__item{
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .contact{
+    &__inner{
+      background-position: bottom right;
+    }
+    &__address{
+      max-width: 65%;
+    }
+    &__item{
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__link-icon{
+      width: 20px;
+      height: 20px;
+    }
+    &__address{
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 }
@@ -209,7 +300,9 @@
 
   .why__title,
   .info__title,
-  .about-city__title {
+  .about-city__title,
+  .plan__title,
+    .group__title {
     font-size: 41px;
     margin-bottom: 20px;
     line-height: 50px;
@@ -283,6 +376,11 @@
       height: 300px;
     }
   }
+  .contact{
+    &__cart{
+      height: 300px;
+    }
+  }
 
   .info {
     &__inner {
@@ -315,12 +413,34 @@
       line-height: 21px;
     }
   }
+
+  .about {
+    &__video-box {
+      height: 300px;
+    }
+  } 
+   .group {
+      &__item {
+        font-size: 17px;
+        line-height: 23px;
+      }
+      &__inner{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
 }
 
 @media(max-width: 600px) {
-  .why__title {
+
+  .why__title,
+  .plan__title,
+  .contact__title {
     font-size: 31px;
     margin-bottom: 20px;
+    line-height: 35px;
   }
 
   .why {
@@ -362,8 +482,30 @@
     &__item {
       height: 150px;
     }
-    &__btn{
+
+    &__btn {
       margin-top: 30px;
+    }
+  }
+
+  .about {
+    &__video-box {
+      height: 200px;
+    }
+
+    &__video {
+      height: 50px;
+      width: 50px;
+    }
+
+    &__video-img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .plan{
+    &__box{
+      margin-bottom: 20px;
     }
   }
 }
@@ -423,4 +565,29 @@
       height: 104px;
     }
   }
+    .contact {
+      &__item {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      &__inner{
+        background-position: center right;
+        margin-bottom: 40px;
+      }
+  
+      &__link-icon {
+        width: 20px;
+        height: 20px;
+      }
+  
+      &__address {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      &__descr{
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
 }
