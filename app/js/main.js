@@ -1,3 +1,5 @@
+// const { active } = require("browser-sync");
+
 $(function () {
   $('[data-fancybox="gallery"]').fancybox({
     // Options will go here
@@ -11,5 +13,11 @@ $(function () {
         current.height = current.height / pixelRatio;
       }
     }
+  });
+
+  $('.menu__btn , .menu__btn-close').on('click',function () {
+    $('.menu__box').toggleClass('active');
+    $('body').toggleClass('lock'); 
+    $('.wrapper').toggleClass('lock');
   });
 })
