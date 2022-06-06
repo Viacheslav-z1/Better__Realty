@@ -83,11 +83,15 @@
   &__list {
     display: flex;
   }
-
+  &__btn-close{
+    display: none;
+  }
   &__item {
     padding: 0px 35px;
   }
-
+  &__btn{
+    display: none;
+  }
   &__link {
     @extend %roboto-400;
     font-size: 30px;

@@ -10,13 +10,21 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="header__logo" href="#">
-          <img class="header__img" src="images/logo/logo.png" alt="logo">
-        </a>
-        <nav class="menu">
+  <div class="wrapper">
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#">
+        <img class="header__img" src="images/logo/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <img class="menu__btn-img" src="images/icons/menu__btn.svg" alt="close">
+        </button>
+        <div class="menu__box">
+          <button class="menu__btn-close">
+            <img class="menu__btn-close__img" src="images/icons/close-icon.svg" alt="close">
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">
@@ -39,10 +47,11 @@
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
   <main class="main">
     <section class="about-city">
       <div class="container">
@@ -141,6 +150,7 @@
       </div>
     </div>
   </footer>
+      </div>
   <script src="js/main.min.js"></script>
 </body>
 
